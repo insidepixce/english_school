@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Add Student</h1>
+    <form id="studentForm" action="/students/add" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="grade">Grade:</label>
+        <input type="number" id="grade" name="grade" required><br>
+        <label for="point">Point:</label>
+        <input type="number" id="point" name="point" required><br>
+        <label for="className">Class Name:</label>
+        <input type="text" id="className" name="className" required><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <button type="submit">Add Student</button>
+    </form>
+    <a href="/students/1">Back to Student List</a>
+</body>
+</html>
